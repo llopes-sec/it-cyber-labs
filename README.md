@@ -1,18 +1,30 @@
-# labs-sec
-Projetos e estudos em cibersegurança | Labs, scripts e exercícios práticos
+# Home Lab do Lucas
 
-# 👋 Olá, eu sou Lucas 
+Este repositório reúne meus projetos de Home Lab voltados para cibersegurança, redes e automação de tarefas.
 
-Sou estudante de **Cibersegurança** e gosto de explorar novas ideias e aprender na prática.  
+## Estrutura
+- **/Python**: scripts de automação e monitoramento de rede
+- **/PowerShell**: scripts para verificação de firewall e portas
+- **/VirtualBox**: laboratório virtual com máquinas Windows e Linux
+- **/PacketTracer**: topologias de rede simuladas
+- **/Wireshark**: capturas de pacotes e análise de tráfego
+- **/Diagrams**: diagramas de rede, prints e GIFs de execução
 
-Neste repositório você vai encontrar **projetos, estudos e experimentos** que realizo enquanto mergulho no mundo da segurança da informação.
+## Scripts principais
+### Python
+- **ping_hosts.py**: verifica conectividade de hosts
+- **relatorio_hosts.py**: gera relatório de hosts ativos
+- **automacao_rede.py**: automatiza verificação de hosts
 
----
+### PowerShell
+- **firewall_check.ps1**: verifica status do firewall do Windows
+- **portas_abertas.ps1**: checa portas abertas em hosts
 
-## 🔹 Sobre este repositório
-- Labs, scripts e exercícios práticos  
-- Resolução de desafios e CTFs  
-- Estudos diversos e insights de aprendizado
+## Como usar
+1. Clone o repositório
+2. Navegue até a pasta do script desejado
+3. Execute seguindo os comentários dentro de cada script
+
 
 ---
 
