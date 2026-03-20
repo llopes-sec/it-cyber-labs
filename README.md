@@ -1,4 +1,4 @@
-# 💻 Home Lab – Cibersegurança e Redes
+# 💻 Home Lab – Lucas Lopes
 
 Este repositório reúne meus projetos práticos de **Home Lab**, com foco em redes, cibersegurança e automação, simulando cenários reais de ambiente corporativo.
 
