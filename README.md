@@ -51,10 +51,10 @@ Scripts desenvolvidos para automação de tarefas de rede e apoio na análise de
 
 Scripts voltados para diagnóstico e resolução de problemas comuns de conectividade:
 
-- Verificação de resolução DNS  
-- Teste de conectividade com gateway  
-- Diagnóstico básico de rede  
-- Coleta de informações do sistema  
+- [`dns_check.py`](./Python/dns_check.py) → Verificação de resolução DNS  
+- [`test_gateway.ps1`](./PowerShell/test_gateway.ps1) → Teste de conectividade com gateway  
+- [`network_diagnosis.py`](./Python/network_diagnosis.py) → Diagnóstico básico de rede  
+- [`system_info.py`](./Python/system_info.py) → Coleta de informações do sistema  
 
 ---
 
