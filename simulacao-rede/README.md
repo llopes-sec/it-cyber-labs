@@ -31,7 +31,7 @@
 | 20 | TI | 192.168.20.0/24 |
 | 30 | VISITANTE | 192.168.30.0/24 |
 
-📸 *Topologia completa*
+
 ![Topologia completa](prints/topologia.png)
 
 ---
@@ -77,8 +77,7 @@ Switch(config-if)# switchport mode trunk
 Switch(config-if)# switchport trunk allowed vlan 10,20,30
 ```
 
-📸 *VLANs configuradas no switch*
-![VLANs no switch](prints/vlans-switch.png)
+![VLANs no switch](prints/switch-vlans.png)
 
 ---
 
@@ -107,8 +106,8 @@ Router(config-subif)# ip address 192.168.30.1 255.255.255.0
 Router(config-subif)# no shutdown
 ```
 
-📸 *Subinterfaces configuradas no router*
-![Subinterfaces do router](prints/subinterfaces-router.png)
+
+![Subinterfaces do router](prints/router-interfaces.png)
 
 ---
 
@@ -120,8 +119,10 @@ Router(config-subif)# no shutdown
 | PC2-TI | 20 | 192.168.20.10 | 255.255.255.0 | 192.168.20.1 |
 | PC3-VIS | 30 | 192.168.30.10 | 255.255.255.0 | 192.168.30.1 |
 
-📸 *Configuração de IP nos desktops*
-![Config IP PCs](prints/config-ip-pcs.png)
+
+![Config IP PC1 - FINANCEIRO](prints/pc1-ip.png)
+![Config IP PC2 - TI](prints/pc2-ip.png)
+![Config IP PC3 - VISITANTE](prints/pc3-ip.png)
 
 ---
 
@@ -133,7 +134,7 @@ Router(config-subif)# no shutdown
 | PC2-TI | Gateway 192.168.20.1 | ✅ Sucesso |
 | PC3-VIS | Gateway 192.168.30.1 | ✅ Sucesso |
 
-📸 *Ping funcionando*
+
 ![Teste de ping](prints/ping.png)
 
 ---
@@ -145,6 +146,6 @@ Router(config-subif)# no shutdown
 
 ---
 
-## 👤 Autor
+## 👤 Autor: Lucas Lopes
 
-Feito com 💙 como parte do meu Home Lab de estudos em redes.
+Feito com 💙 e ☕ como parte do meu Home Lab de estudos em redes.
