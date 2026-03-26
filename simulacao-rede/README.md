@@ -1,4 +1,4 @@
-# 🧪 Simulação de Rede – Home Lab
+# 🧪 Simulação de Rede 
 
 > Projeto de simulação de ambiente corporativo com segmentação por VLANs, roteamento inter-VLAN (Router-on-a-Stick) e validação de conectividade, utilizando **Cisco Packet Tracer**.
 
