@@ -28,3 +28,8 @@ O principal aprendizado foi que ambientes de segurança
 exigem persistência, erros fazem parte do processo de configuração
 e saber interpretar mensagens de erro é tão importante 
 quanto seguir o passo a passo.
+
+## Prints
+
+**Dashboard OPNsense:**
+![Dashboard](prints/opn-dash.png)
