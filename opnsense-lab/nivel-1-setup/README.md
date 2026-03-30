@@ -18,7 +18,6 @@ Instalar e configurar o OPNsense em ambiente virtualizado com acesso via painel 
 
 ## Resultado
 Painel web acessível em https://192.168.56.101
-Login: root
 
 ## O que eu aprendi
 Entendi na prática a diferença entre WAN e LAN:
