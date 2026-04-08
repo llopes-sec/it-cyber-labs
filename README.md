@@ -26,7 +26,7 @@ Simulação de ambiente com controle de acesso e segmentação de rede.
 - Controle de tráfego entre máquinas  
 - Testes de bloqueio e liberação de portas  
 
-🔗 [Ver projeto](./opnsense-lab/nivel-1-setup/README.md)
+🔗 [Ver projeto](./opnsense-lab)
 
 ---
 
