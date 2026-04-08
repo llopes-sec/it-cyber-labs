@@ -1,6 +1,6 @@
 # 🔍 Network Traffic Monitoring com Wireshark
 
-> Análise prática de tráfego de rede para identificação de padrões, protocolos e comportamentos — fundamento essencial para Blue Team e SOC.
+> - Análise de tráfego de rede para identificação de padrões, protocolos e comportamentos.
 
 ---
 
@@ -38,7 +38,7 @@ sudo apt install wireshark -y
 sudo usermod -aG wireshark $USER
 ```
 
-> ⚠️ **Importante:** Após adicionar ao grupo, reinicie a sessão para que as permissões sejam aplicadas corretamente.
+>  **Importante:** Após adicionar ao grupo, reinicie a sessão para que as permissões sejam aplicadas corretamente.
 
 ![Wireshark instalado e aberto](prints/intall-ws.png)
 
@@ -123,7 +123,7 @@ Durante a captura, foram analisados padrões de tráfego com foco na identifica�
 
   ![Filtro TCP RST](prints/tcp-ws.png)
 
-### 🧠 Conclusão técnica
+### Conclusão técnica
 
 Não foram identificados indícios de:
 
@@ -132,7 +132,7 @@ Não foram identificados indícios de:
 - ❌ Tentativas de exploração
 - ❌ Exfiltração de dados
 
-> 👉 O comportamento observado está alinhado com um ambiente controlado e uso legítimo da rede.
+> - O comportamento observado está alinhado com um ambiente controlado e uso legítimo da rede.
 >
 > Este processo é fundamental para estabelecer um **baseline de tráfego**, que permite identificar desvios em cenários reais de incidente.
 
@@ -148,7 +148,7 @@ Não foram identificados indícios de:
 | Baseline de comportamento estabelecido | ✅ |
 | Nenhuma anomalia relevante identificada | ✅ |
 
-> 🔍 Este projeto demonstra na prática como funciona a análise de tráfego de rede — habilidade fundamental para atuação em **Blue Team**, **SOC** e **Segurança da Informação**.
+> 🔍 Este projeto demonstra na prática como funciona a análise de tráfego de rede.
 
 ---
 
