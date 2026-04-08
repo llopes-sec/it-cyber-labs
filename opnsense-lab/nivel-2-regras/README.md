@@ -10,13 +10,13 @@ como o firewall decide o que bloquear e o que permitir.
 ## Prints
 
 **Regras da interface LAN:**
-![Regras LAN](prints/opn-rules.png)
+![Regras LAN](prints/regra-opn.png)
 
-**Teste de ping via Diagnostics:**
-![Ping ICMP](prints/opn-ping-icmprule.png)
+**Log bloqueando ICMP:**
+![Log firewall](prints/log-opn.png)
 
-**Log do firewall:**
-![Log firewall](prints/opn-log-ping.png)
+**Teste de ping bloqueado:**
+![Ping bloqueado](prints/ping-opn.png)
 
 ## O que eu aprendi
 As regras de firewall são processadas de cima pra baixo,
