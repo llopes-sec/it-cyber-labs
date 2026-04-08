@@ -10,7 +10,7 @@ Este repositório reúne meus projetos práticos de **Home Lab**, com foco em re
 
 ---
 
-## [📡 Monitoramento de Tráfego] (./monitoramento-trafego/README.md)
+## [📡 Monitoramento de Tráfego](./monitoramento-trafego/README.md)
 - Análise de pacotes com **Wireshark**  
 - Identificação de padrões de comunicação  
 - Detecção de possíveis anomalias na rede  
@@ -25,7 +25,7 @@ Utilização do **Nmap** para:
 
 ---
 
-## [🔐 Testes de Firewall e Segmentação] (./opnsense-lab/nivel-1-setup/README.md)
+## [🔐 Testes de Firewall e Segmentação](./opnsense-lab/nivel-1-setup/README.md)
 - Aplicação de regras básicas de firewall  
 - Controle de acesso entre máquinas  
 - Simulação de cenários de bloqueio e liberação de portas  
