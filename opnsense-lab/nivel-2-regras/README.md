@@ -10,12 +10,15 @@ como o firewall decide o que bloquear e o que permitir.
 ## Prints
 
 **Regras da interface LAN:**
-![Regras LAN](prints/regra-opn.png)
+
+![Regras LAN](prints/regras-opn.png)
 
 **Log bloqueando ICMP:**
+
 ![Log firewall](prints/log-opn.png)
 
 **Teste de ping bloqueado:**
+
 ![Ping bloqueado](prints/ping-opn.png)
 
 ## O que eu aprendi
