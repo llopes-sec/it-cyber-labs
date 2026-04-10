@@ -1,8 +1,8 @@
 # 💻 IT & Cybersecurity Portfolio — Lucas Lopes 🔐
 
-Repositório com projetos práticos voltados para **redes, infraestrutura e cibersegurança**, simulando cenários reais de ambientes corporativos.
+Repositório com projetos práticos em redes, infraestrutura e cibersegurança, simulando cenários reais de ambientes corporativos e desafios do dia a dia de TI.
 
-🎯 Objetivo: desenvolver habilidades para atuação em suporte técnico, redes e infraestrutura, com foco em troubleshooting e boas práticas de segurança.
+🎯 Objetivo: desenvolver e demonstrar habilidades em suporte técnico, redes e infraestrutura, com foco em troubleshooting, análise de problemas e aplicação de boas práticas de segurança.
 
 ---
 
