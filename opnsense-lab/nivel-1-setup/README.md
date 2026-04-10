@@ -33,3 +33,9 @@ quanto seguir o passo a passo.
 
 **Dashboard OPNsense:**
 ![Dashboard](prints/opn-dash.png)
+
+---
+
+## 👤 Autor: Lucas Lopes
+
+Feito com 💙 e ☕ como parte do meu Home Lab e estudos.
