@@ -1,72 +1,95 @@
-# 💻 Home Lab – Lucas Lopes
+# 💻 Home Lab 
 
-Este repositório reúne meus projetos práticos de **Home Lab**, com foco em redes, cibersegurança e automação, simulando cenários reais de ambiente corporativo.
+Repositório com projetos práticos voltados para **redes, infraestrutura e cibersegurança**, simulando cenários reais de ambientes corporativos.
 
----
-
-## [🧪 Simulação de Rede](./simulacao-rede/README.md)
-- Simulações de topologias no **Cisco Packet Tracer**  
-- Configuração de rede interna, testes de conectividade e segmentação  
+🎯 Objetivo: desenvolver habilidades para atuação em suporte técnico, redes e infraestrutura, com foco em troubleshooting e boas práticas de segurança.
 
 ---
 
-## [📡 Monitoramento de Tráfego](./monitoramento-trafego/README.md)
-- Análise de pacotes com **Wireshark**  
-- Identificação de padrões de comunicação  
-- Detecção de possíveis anomalias na rede  
+### 📡 Monitoramento de Tráfego com Wireshark  
+Análise de comunicação em rede para identificação de padrões e possíveis anomalias.
+
+**Na prática:**
+- Captura e análise de pacotes  
+- Uso de filtros (DNS, HTTP)  
+- Identificação de comportamentos de rede  
+
+🔗 [Ver projeto](./monitoramento-trafego/README.md)
 
 ---
 
-## 🔍 Varredura de Rede
-Utilização do **Nmap** para:
-- Descoberta de hosts ativos  
-- Identificação de portas abertas  
-- Enumeração de serviços  
+### 🔐 Configuração de Firewall com OPNsense  
+Simulação de ambiente com controle de acesso e segmentação de rede.
+
+**Na prática:**
+- Criação de regras de firewall  
+- Controle de tráfego entre máquinas  
+- Testes de bloqueio e liberação de portas  
+
+🔗 [Ver projeto](./opnsense-lab)
 
 ---
 
-## [🔐 Testes de Firewall e Segmentação](./opnsense-lab/nivel-1-setup/README.md)
-- Aplicação de regras básicas de firewall  
-- Controle de acesso entre máquinas  
-- Simulação de cenários de bloqueio e liberação de portas  
+### 🔍 Varredura de Rede com Nmap  
+Mapeamento de rede para descoberta de ativos e serviços.
+
+**Na prática:**
+- Identificação de hosts ativos  
+- Enumeração de portas e serviços  
+- Análise de exposição de rede  
+
+🔗 [Ver projeto](./varredura-nmap/README.md)
 
 ---
 
-## ⚙️ Automação com Scripts
+### 🌐 Redes
 
-Scripts desenvolvidos para automação de tarefas de rede e apoio na análise de dados:
-
-### 🐍 Python
-- [`ping_hosts.py`](./Python/ping_hosts.py) → verificação de conectividade  
-- [`relatorio_hosts.py`](./Python/relatorio_hosts.py) → geração de relatório de hosts  
-- [`automacao_rede.py`](./Python/automacao_rede.py) → automação de verificações  
-
-### 🟦 PowerShell
-- [`firewall_check.ps1`](./PowerShell/firewall_check.ps1) → verificação do firewall  
-- [`portas_abertas.ps1`](./PowerShell/portas_abertas.ps1) → análise de portas abertas  
+- 🧪 [Simulação de Rede](./simulacao-rede/README.md)  
+  - Topologias no Cisco Packet Tracer  
+  - Configuração e testes de conectividade  
 
 ---
 
-## 🛠 Troubleshooting de Rede
+### ⚙️ Automação e Scripts
 
-Scripts voltados para diagnóstico e resolução de problemas comuns de conectividade:
+- 🐍 [Scripts em Python](./Python/)  
+  - Automação de rede  
+  - Geração de relatórios  
+  - Diagnóstico de conectividade  
 
-- [`dns_check.py`](./Python/dns_check.py) → Verificação de resolução DNS  
-- [`test_gateway.ps1`](./PowerShell/test_gateway.ps1) → Teste de conectividade com gateway  
-- [`network_diagnosis.py`](./Python/network_diagnosis.py) → Diagnóstico básico de rede  
-- [`system_info.py`](./Python/system_info.py) → Coleta de informações do sistema  
-
----
-
-## 🚀 Como usar
-1. Clone o repositório  
-2. Navegue até a pasta desejada  
-3. Execute os scripts conforme instruções nos arquivos  
+- 🟦 [Scripts em PowerShell](./PowerShell/)  
+  - Verificação de firewall  
+  - Análise de portas  
+  - Scripts administrativos  
 
 ---
 
-## 📫 Conecte-se comigo
+### 🛠 Troubleshooting
+
+- Diagnóstico de rede (DNS, gateway, conectividade)  
+- Coleta de informações do sistema  
+- Identificação de falhas comuns  
+
+---
+
+## 🚀 Tecnologias utilizadas
+
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
+![Nmap](https://img.shields.io/badge/Nmap-214478?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![OPNsense](https://img.shields.io/badge/OPNsense-D94F00?style=for-the-badge&logo=opnsense&logoColor=white)
+![Cisco Packet Tracer](https://img.shields.io/badge/Cisco_Packet_Tracer-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
+![Linux Mint](https://img.shields.io/badge/Linux_Mint-87CF3E?style=for-the-badge&logo=linuxmint&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
+
+---
+
+## 📌 Sobre
+
+Projetos desenvolvidos como parte da minha evolução na área de TI, com foco em prática real em redes, infraestrutura e fundamentos de segurança.
+
+---
+
+## 📫 Contato
 - [LinkedIn](https://www.linkedin.com/in/lucas-lopes-823530202)  
 - [GitHub](https://github.com/llopes-sec)  
-
-Sempre aberto a trocar ideias e aprender com outros profissionais da área.
