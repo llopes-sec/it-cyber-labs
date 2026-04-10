@@ -31,7 +31,7 @@ sudo ufw enable
 sudo ufw deny 8080
 
 
-![regra firewall](../evidencias/prints/08_regra_firewall.png)
+![regra firewall](../evidencias/prints/8_regra_firewall.png)
 
 ### 3. Teste após bloqueio
 Tentativa de acesso bloqueada com timeout:
