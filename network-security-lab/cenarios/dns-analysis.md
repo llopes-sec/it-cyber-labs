@@ -28,7 +28,7 @@ Ping por nome falhou com "Temporary failure in name resolution":
 ### 4. Teste direto no servidor DNS falso
 nslookup google.com 192.168.0.123
 
-![nslookup falha](../evidencias/prints/03_nslookup_falha.png)
+![nslookup falha](../evidencias/prints/03_nslookup_falha.png.png)
 
 ## Solução
 Revertido o `/etc/resolv.conf` para o servidor DNS original (`127.0.0.53`
