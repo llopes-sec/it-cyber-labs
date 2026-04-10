@@ -33,3 +33,9 @@ foram validados via logs e diagnósticos do próprio OPNsense.
 Isso me mostrou que entender o escopo de cada regra
 (em qual interface ela atua e em qual direção) é fundamental
 para configurar um firewall corretamente.
+
+---
+
+## 👤 Autor: Lucas Lopes
+
+Feito com 💙 e ☕ como parte do meu Home Lab e estudos hands-on.
