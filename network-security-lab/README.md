@@ -7,6 +7,12 @@
 ![Nmap](https://img.shields.io/badge/Nmap-0E83CD?style=for-the-badge&logo=nmap&logoColor=white)
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white)
 
+## Índice
+- [Objetivo](#objetivo)
+- [Ambiente](#ambiente)
+- [Cenários](#cenários)
+- [Resultados](#resultados)
+
 ## Objetivo
 Simulação de incidentes de rede com análise técnica e documentação profissional,
 aplicando conceitos de troubleshooting, controle de acesso e análise de tráfego.
@@ -21,10 +27,10 @@ aplicando conceitos de troubleshooting, controle de acesso e análise de tráfeg
 
 | Cenário | Técnica | Arquivo |
 |---------|---------|---------|
-| DNS Failure | Diagnóstico de camadas de rede | cenarios/dns-analysis.md |
-| Firewall Control | Controle de acesso com ufw | cenarios/firewall-control.md |
-| Traffic Analysis | Análise de tráfego com Wireshark | cenarios/traffic-analysis.md |
-| Port Scan | Reconhecimento com Nmap | cenarios/port-scan.md |
+| DNS Failure | Diagnóstico de camadas de rede | [cenarios/dns-analysis.md](cenarios/dns-analysis.md) |
+| Firewall Control | Controle de acesso com ufw | [cenarios/firewall-control.md](cenarios/firewall-control.md) |
+| Traffic Analysis | Análise de tráfego com Wireshark | [cenarios/traffic-analysis.md](cenarios/traffic-analysis.md) |
+| Port Scan | Reconhecimento com Nmap | [cenarios/port-scan.md](cenarios/port-scan.md) |
 
 ## Resultados
 Cada cenário documenta um problema real de rede, a investigação realizada,
