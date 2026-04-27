@@ -33,14 +33,14 @@ sudo nmap -sS 192.168.56.106
 
 ![nmap depois firewall](../evidencias/prints/12_nmap_depois_firewall.png)
 
-Resultado: 1000 portas filtered — nenhuma acessível externamente.
+Resultado: 1000 portas filtered, nenhuma acessível externamente.
 
 ## Solução
 Firewall ativo bloqueando todo tráfego não autorizado.
 
 ## Resultado
 Antes: 2 portas abertas e visíveis (SSH e HTTP).
-Depois: 1000 portas filtered — superfície de ataque drasticamente reduzida.
+Depois: 1000 portas filtered - superfície de ataque drasticamente reduzida.
 
 ## Análise de segurança
 - Cada porta aberta é um ponto de entrada potencial para um atacante
