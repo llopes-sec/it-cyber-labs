@@ -44,6 +44,6 @@ Depois: 1000 portas filtered — superfície de ataque drasticamente reduzida.
 
 ## Análise de segurança
 - Cada porta aberta é um ponto de entrada potencial para um atacante
-- Nmap é a ferramenta de reconhecimento mais usada — conhecer a visão do atacante é essencial para defender
+- Nmap é a ferramenta de reconhecimento mais usada, conhecer a visão do atacante é essencial para defender
 - filtered vs closed: filtered significa firewall bloqueou, closed significa sem serviço na porta
 - Em ambiente corporativo: varreduras periódicas de portas fazem parte de qualquer programa de gestão de vulnerabilidades
