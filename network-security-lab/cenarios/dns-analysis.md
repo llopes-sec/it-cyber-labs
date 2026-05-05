@@ -38,7 +38,17 @@ Revertido o `/etc/resolv.conf` para o servidor DNS original (`127.0.0.53`
 Conectividade restabelecida. Ping por nome voltou a funcionar normalmente.
 
 ## Análise de segurança
-- Camada 3 funcionando não significa que o usuário consegue acessar a internet
-- Falha de DNS pode ser erro de configuração ou ataque de envenenamento de DNS (DNS spoofing)
-- Impacto real: usuário interpreta como "internet caiu" quando é só resolução de nomes
-- Monitorar alterações no `/etc/resolv.conf` é uma prática importante em ambientes corporativos
+
+### 1. Indisponibilidade vs. Integridade
+*   **DNS Failure (Cenário Simulado):** O erro "Temporary failure in name resolution" indica uma quebra de **disponibilidade**. O serviço de nomes para de responder, resultando em um erro explícito. É o sintoma comum de falhas de configuração ou ataques de **DoS/DDoS** contra o resolver DNS.
+*   **DNS Spoofing (Risco Associado):** Diferente da falha simulada, ataques de envenenamento de cache (Poisoning) ou Spoofing atacam a **integridade**. O comando `nslookup` retornaria um IP com sucesso, porém pertencente a um atacante, direcionando o usuário para sites falsos sem que mensagens de erro apareçam.
+
+### 2. Visibilidade e Camadas OSI
+A análise reforça a importância do troubleshooting em camadas. O `ping` por IP (Camada 3) confirmou que o "túnel" de comunicação estava aberto, isolando o problema para a **Camada 7 (Aplicação)**, onde o protocolo DNS opera.
+
+### 3. Vetores de Ataque e Mitigação
+*   **Intercepção:** Como o tráfego DNS padrão (porta 53 UDP) viaja sem criptografia, ele é vulnerável a ataques de *Man-in-the-Middle* (MitM).
+*   **Boas Práticas:** 
+    *   Implementação de **DNSSEC** para garantir a autenticidade das respostas.
+    *   Uso de **DoH (DNS over HTTPS)** para criptografar as consultas.
+    *   Monitoramento constante de alterações em arquivos críticos como `/etc/resolv.conf` e configurações de Netplan.
