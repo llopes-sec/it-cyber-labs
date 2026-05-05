@@ -22,12 +22,14 @@ ping google.com -c 4
 nslookup github.com
 
 ### 3. Filtro DNS
-Filtro aplicado para isolar consultas e respostas DNS:
+Apliquei o filtro `dns` para isolar as requisições de resolução de nomes.
+- **Análise:** Foi possível observar o tráfego saindo da VM em direção ao resolver, utilizando o protocolo **UDP na porta 53**. Notei a estrutura de *Standard Query* e a respectiva resposta com o endereço IP do domínio consultado.
 
 ![filtro dns](../evidencias/prints/09_filtro_dns.png)
 
 ### 4. Filtro ICMP
-Filtro aplicado para isolar pacotes ICMP do ping:
+Filtrei o tráfego pelo protocolo `icmp` para validar o teste de conectividade.
+- **Análise:** A captura revelou o ciclo de vida do comando ping, exibindo pacotes do tipo **Echo (ping) request** seguidos pelos pacotes de **Echo (ping) reply**, confirmando a comunicação bidirecional.
 
 ![filtro icmp](../evidencias/prints/10_filtro_icmp.png)
 
@@ -38,7 +40,7 @@ Captura salva em `evidencias/capturas/captura-lab.pcapng` para análise posterio
 Tráfego DNS e ICMP identificado e isolado com sucesso via filtros do Wireshark.
 
 ## Análise de segurança
-- DNS trafega em texto claro: qualquer host na rede consegue ver quais domínios foram consultados
-- Análise de tráfego é a base de qualquer investigação de segurança ou forense de rede
-- Filtros permitem isolar protocolos e identificar anomalias no meio de grande volume de pacotes
-- Em ambiente corporativo: monitoramento contínuo de tráfego DNS pode revelar exfiltração de dados ou C2
+* **Vulnerabilidade do DNS em Texto Claro:** A captura confirmou que consultas DNS padrão não possuem criptografia. Um atacante realizando *sniffing* na rede pode mapear o comportamento do usuário e os serviços utilizados. 
+* **Detecção de Ameaças:** A análise de tráfego é fundamental para identificar **DNS Tunneling** (uso do protocolo DNS para retirar dados de uma rede de forma camuflada) e comunicações de **C2 (Command & Control)**.
+* **Protocolos ICMP:** Embora úteis para diagnóstico, pacotes ICMP podem ser explorados para mapeamento de rede (*host discovery*) por atacantes. Em ambientes de alta segurança, é comum limitar o tipo de mensagens ICMP permitidas.
+* **Forense de Rede:** O arquivo `.pcapng` gerado serve como evidência imutável em um processo de resposta a incidentes, permitindo reconstruir exatamente o que aconteceu durante um evento suspeito.
