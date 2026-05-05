@@ -22,17 +22,9 @@ como o firewall decide o que bloquear e o que permitir.
 ![Ping bloqueado](prints/ping-opn.png)
 
 ## O que eu aprendi
-As regras de firewall são processadas de cima pra baixo,
- a primeira regra que bater no tráfego é a que vale.
+Consolidei o conceito de First Match: as regras são processadas de forma sequencial (top-down) e a primeira correspondência interrompe a análise.
 
-Aprendi também que regras da LAN controlam tráfego originado
-dentro da rede interna. Em um ambiente de lab com recursos
-limitados, sem uma VM cliente separada na LAN, os testes
-foram validados via logs e diagnósticos do próprio OPNsense.
-
-Isso me mostrou que entender o escopo de cada regra
-(em qual interface ela atua e em qual direção) é fundamental
-para configurar um firewall corretamente.
+Além disso, compreendi a aplicação de regras em interfaces específicas. Como o lab ainda não possui máquinas clientes, utilizei as ferramentas de Packet Capture e Live View Logs do próprio OPNsense para validar o bloqueio do tráfego originado na interface LAN. Isso reforçou a importância de saber ler logs para auditoria e troubleshooting de políticas de segurança.
 
 ---
 
