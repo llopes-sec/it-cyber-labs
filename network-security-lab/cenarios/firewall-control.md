@@ -56,7 +56,7 @@ Tentativa de acesso bloqueada com timeout:
 ![http bloqueado](../evidencias/prints/06_http_bloqueado.png)
 
 ## Solução
-Porta 8080 bloqueada via ufw. Serviço inacessível externamente.
+Porta 8080 bloqueada em múltiplas camadas (UFW na VM e OPNsense na rede), tornando o serviço inacessível externamente.
 
 ## Resultado
 Antes: serviço acessível por qualquer host na rede.
@@ -64,6 +64,9 @@ Depois: conexão recusada, timeout imediato.
 
 ## Análise de segurança
 - Serviço exposto sem controle = superfície de ataque desnecessária
-- ufw como controle preventivo: nega por padrão, libera apenas o necessário
+- Controle em múltiplas camadas, reduzindo risco mesmo em caso de falha de uma das proteções
+- UFW como controle local (host-based firewall)
+- OPNsense como controle de perímetro (network firewall)
 - Princípio do menor privilégio aplicado na camada de rede
-- Em ambiente corporativo: qualquer serviço exposto deve ter justificativa e controle de acesso
+
+
