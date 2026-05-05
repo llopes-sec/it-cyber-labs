@@ -23,19 +23,17 @@ Acesso confirmado pelo host:
 
 ![http funcionando](../evidencias/prints/04_http_funcionando.png)
 
+---
+
 ### 2. Aplicação da regra de bloqueio
-O bloqueio da porta 8080 foi implementado em duas camadas de segurança:
+Após identificar a exposição do serviço, o bloqueio da porta 8080 foi implementado em duas camadas de segurança:
 
-- Firewall local na VM utilizando UFW
-- Firewall de rede utilizando OPNsense
-
-### Firewall local (UFW)
-O bloqueio da porta 8080 foi implementado em duas camadas de segurança, ambas virtualizadas:
-
-- Firewall local na VM Ubuntu Server utilizando UFW
-- Firewall de rede na VM OPNsense, atuando como gateway entre o host e a VM
+- Firewall local na VM Ubuntu Server utilizando UFW  
+- Firewall de rede na VM OPNsense
 
 Essa abordagem segue o conceito de defense in depth (defesa em profundidade).
+
+### Firewall local (UFW)
 
 Ativação do firewall e criação da regra de bloqueio na VM Ubuntu Server:
 
@@ -46,14 +44,18 @@ sudo ufw status numbered
 ```
 ### Firewall de rede (OPNsense)
 
-Regra aplicada no OPNsense, bloqueando o tráfego externo para a porta 8080:
+Regra aplicada no OPNsense, bloqueando o tráfego para a porta 8080 da VM:
 
 ![regra firewall](../evidencias/prints/8_regra_firewall.png)
+
+---
 
 ### 3. Teste após bloqueio
 Tentativa de acesso bloqueada com timeout:
 
 ![http bloqueado](../evidencias/prints/06_http_bloqueado.png)
+
+---
 
 ## Solução
 Porta 8080 bloqueada em múltiplas camadas (UFW na VM e OPNsense na rede), tornando o serviço inacessível externamente.
